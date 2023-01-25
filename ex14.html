@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+
+<script>
+    var kmPercorrido = Number.parseFloat(prompt("Digite aqui quantos km foram percorridos"));
+    var diasAlugado = Number.parseFloat(prompt("Por quantos dias o carro ficou alugado"));
+
+    var valorDiaria = diasAlugado * 90;
+    var valorKm = kmPercorrido * 0.20;
+    var valorLoc = valorDiaria + valorKm;
+
+    document.write("Você percorreu: " + kmPercorrido + "  KM");
+    document.write("<hr>");
+    document.write("Você alugou o carro por: " + diasAlugado + " dias");
+    document.write("<hr>");
+    document.write("O valor da sua locacao foi é de: " + valorLoc.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+</script>

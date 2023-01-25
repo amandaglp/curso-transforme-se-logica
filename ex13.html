@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+
+<script>
+    //Ler o salario do funcionario e calcular aumento de 15%
+    var salario = Number.parseFloat(prompt("Digite aqui seu salário atual"));
+    var acrescimo = salario * (15 / 100)
+    var novoSalario = salario + acrescimo;
+
+    document.write("O valor atual do seu salário é de: " + salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+    document.write("O valor do acréscimo será de: " + acrescimo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+    document.write("Seu novo salário será de: " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+</script>

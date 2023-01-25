@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+
+<script>
+    var diasTrab = Number(prompt("Digite quantos dias você trabalhou"));
+    var valorDiario = 8 * 25;
+    var valorSalario = diasTrab * valorDiario;
+
+    document.write("Você trabalhou por: " + diasTrab + " dias");
+    document.write("<hr>");
+    document.write("Seu salário será de: " + valorSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+</script>

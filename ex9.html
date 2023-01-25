@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+
+<script>
+    var valorReal = Number.parseFloat(prompt("Digite aqui o valor em reais"));
+    var valorDolar = valorReal / 3.45;
+
+    document.write("Você pode comprar: " + valorDolar.toLocaleString('eng-US', { style: 'currency', currency: 'USD' }));
+    document.write("<hr>");
+
+
+</script>
