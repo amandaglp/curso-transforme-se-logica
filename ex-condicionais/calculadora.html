@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+    /*Crie um algoritmo que receba dois números
+    e um dos símbolos abaixo para realizar uma
+    operação matemática.
+    +
+    -
+    *
+    /
+    
+    calcule e mostre o resultado.
+    */
+
+    var n1 = Number(prompt("Digite aqui um número"));
+    var n2 = Number(prompt("Digite aqui um número"));
+    var operacao = (prompt("Qual operação deseja: \n Soma: + \n Subtração : - \n Multiplicação *  \n Divisão / "));
+    var resultado
+
+    switch (operacao) {
+        case '+':
+            resultado = n1 + n2;
+            document.write("O resultado é: " + resultado);
+            break;
+
+        case '-':
+            resultado = n1 - n2;
+            document.write("O resultado é: " + resultado);
+            break;
+
+        case '*':
+            resultado = n1 * n2;
+            document.write("O resultado é: " + resultado);
+            break;
+
+        case '/':
+            resultado = n1 / n2;
+            document.write("O resultado é: " + resultado);
+            break;
+
+        default:
+            document.write("Opção inválida.");
+            break;
+
+    }
+
+</script>
