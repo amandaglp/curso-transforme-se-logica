@@ -1,19 +1,29 @@
 <meta charset="UTF-8">
 
 <script>
+
+    /* Faça um programa que leia o ano de nascimento da pessoa, calcule a idade dela 
+    E depois    mostre se ela pode ou não votar.
+    */
+
+   /* var data = new Date();
+    const anoAtual = data.getFullYear();
+    */
+
+
     var anoNascimento = Number(prompt("Digite seu ano de nascimento:"));
 
     var idade;
 
-    if (anoNascimento >= 1050) {
+    if (anoNascimento >= 1920) {
         idade = 2023 - anoNascimento;
 
         if (idade >= 16) {
-            document.write("Você está apto a votar");
+            alert("Você está apto a votar.");
 
         }
         else {
-            document.write("Você não está apto a votar");
+            alert("Você não está apto a votar.");
 
         }
     }
