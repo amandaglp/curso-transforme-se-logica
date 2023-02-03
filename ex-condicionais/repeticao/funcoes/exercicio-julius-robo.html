@@ -2,9 +2,15 @@
 
 <script>
 
-    fazerCafe(3, "papel");
+    var trocaLencol = confirm("Precisa trocar o lençol?");
+    arrumarCasa(trocaLencol);
 
-    fazerCafe(5, "pano");
+    var qtdCafe = Number(prompt("Quantas colheres de café?"));
+    var tipoDeCoador = prompt("Qual tipo de coador?");
+
+    fazerCafe(qtdCafe, tipoDeCoador);
+
+
 
     function fazerCafe(qtdPoCafe, tipoCoador) {
         document.write("Pegar o pó de café");
@@ -21,13 +27,32 @@
             pulaLinha();
         }
 
-        document.write("Colocar " + qtdPoCafe + " colheres de café na água");
+        document.write("Colocar " + qtdCafe + " colheres de café na água");
         pulaLinha();
         document.write("Coar o café LENTAMENTE");
         pulaLinha();
         desenharUmaLinha();
 
+
     }
+    function arrumarCasa(trocaLencol) {
+
+        if (trocaLencol) {
+            document.write("Troque o lençol");
+            pulaLinha();
+        }
+
+
+        document.write("Estica o lençol");
+        pulaLinha();
+        document.write("Dobra os edredons");
+        pulaLinha();
+        document.write("Arruma os travesseiros");
+        pulaLinha();
+        document.write("Estica o cobre-leito");
+        desenharUmaLinha();
+    }
+
 
     function pulaLinha() {
         document.write("<br>");
