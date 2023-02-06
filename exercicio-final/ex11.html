@@ -2,34 +2,33 @@
 
 <script>
 
-    /* 10 - Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um
-    somente para números pares, e outro somente para números ímpares.
-    Após, exiba os valores dos dois vetores na tela, em sequencia  */
+    /* 11 - Modifique o programa anterior para não aceitar a entrada do número zero, e requisitar a
+    digitação de outro número neste caso  */
 
     let par = [];
     let impar = [];
     let qtdPares = 0;
     let qtdImpares = 0;
 
-    function promptUsuário(numero) {
-    let inserir = '0';
-    switch (numero) {
-        case 0:
-            inserir = prompt('Digite um número diferente');
-            break;
+    function entradaNumero(numero) {
+        let inserir = '0';
+        switch (numero) {
+            case 0:
+                inserir = prompt('Digite um número diferente');
+                break;
 
-        default:
-            inserir = prompt('Digite um número');
-            break;
+            default:
+                inserir = prompt('Digite um número');
+                break;
+        }
+        if (inserir === '0') return entradaNumero(0);
+        return inserir
+
     }
-    if(inserir === '0') return promptUsuário(0);
-    return inserir
 
-}
-    
     for (let i = 0; i < 10; i++) {
 
-        let inserir = promptUsuário();
+        let inserir = entradaNumero();
 
         if ((inserir % 2) == 0) {
 
