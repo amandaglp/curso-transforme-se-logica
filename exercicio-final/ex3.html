@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 3 - Faça o algoritmo que calcule o valor em Reais, correspondente aos dólares que um
+turista possui no cofre do hotel. O programa deve solicitar os seguintes dados: Quantidade
+de dólares guardados no cofre e cotação do dólar naquele dia.*/
+
+    var qtdDolar = Number(prompt("Digite aqui quantos dólares você tem no cofre: "));
+    var cotacaoDolar = Number.parseFloat(prompt("Digite a cotação do dólar hoje: "));
+    var valorReais = qtdDolar * cotacaoDolar;
+
+    document.write("Quantidade de dólares em reais corresponde a: " + valorReais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+
+</script>

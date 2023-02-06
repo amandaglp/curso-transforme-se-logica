@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 8 - Faça uma função que recebe a idade de uma pessoa em anos, meses e dias e retorna
+essa idade expressa em dias */
+
+    let idadeAnos = Number.parseInt(prompt("Digite sua idade em anos"));
+    let idadeMeses = Number.parseInt(prompt("Digite sua idade em meses"));
+    let idadeDias = Number.parseInt(prompt("Digite sua idade em dias"));
+
+
+    function idadeEmDias(anos, meses, dias) {
+        return (anos * 365 + meses * 30 + dias)
+
+    }
+    
+    document.write(`A sua idade em dias é ${idadeEmDias(idadeAnos, idadeMeses, idadeDias)}`);
+
+</script>

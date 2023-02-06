@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 2 - Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas
+oferecendo desconto. Faça um algoritmo que possa receber um valor de um produto e que
+escreva o novo valor tendo em vista que o desconto foi de 9% */
+
+    var valorProd = Number(prompt("Digite aqui o valor do protudo:"));
+    var desconto = valorProd * (9 / 100);
+    var precoProm = valorProd - desconto;
+
+    document.write("O preço com desconto do produto é: " + precoProm.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+
+</script>

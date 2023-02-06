@@ -1,0 +1,58 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    /* 10 - Crie um programa que armazene 10 números digitados pelo usuário em dois vetores: um
+    somente para números pares, e outro somente para números ímpares.
+    Após, exiba os valores dos dois vetores na tela, em sequencia  */
+
+    let par = [];
+    let impar = [];
+    let qtdPares = 0;
+    let qtdImpares = 0;
+
+    for (let i = 0; i < 10; i++) {
+
+        let input = Number.parseInt(prompt("Digite um número inteiro: "));
+
+        if ((input % 2) == 0) {
+
+            par.push(input);
+
+            qtdPares++;
+        }
+
+        else {
+
+            impar.push(input);
+
+            qtdImpares++;
+        }
+
+    }
+
+    for (let i = 0; i < par.length; i++) {
+
+        document.write(par[i] + ". ");
+    }
+
+    pulaLinha();
+    document.write("Quantidade de pares: " + qtdPares);
+    pulaLinha();
+
+    for (let i = 0; i < impar.length; i++) {
+        document.write(impar[i] + ". ");
+
+    }
+
+    pulaLinha();
+    document.write("Quantidade de ímpares: " + qtdImpares);
+    pulaLinha();
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+</script>
