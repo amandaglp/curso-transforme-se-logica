@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    let data = new Date();
+    const anoAtual = data.getFullYear();
+    let anoNascimento = Number.parseInt(prompt("Digite aqui seu ano de nascimento"));
+
+    let idade = anoAtual - anoNascimento;
+
+    if (idade < 18) {
+        let anosFaltam = 18 - idade;
+        document.write("Faltam " + anosFaltam + " para você se alistar");
+
+    }
+    else if (idade > 18) {
+        let anosAtraso = idade - 18;
+        document.write("Você está " + anosAtraso + " anos atrasado para o alistamento")
+    }
+
+</script>
