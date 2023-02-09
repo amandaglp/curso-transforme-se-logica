@@ -2,18 +2,23 @@
 
 <script>
 
-    let  = Number.parseInt(prompt("Digite aqui seu ano de nascimento"));
+    let nome = prompt("Digite seu nome:");
+    let sexo = prompt("Digite seu sexo. F para feminino e M para masculino:");
+    let valorCompra = Number(prompt("Digite aqui o valor da sua compra"));
+    let valorDesconto = 0;
 
-    let idade = anoAtual - anoNascimento;
-
-    if (idade < 18) {
-        let anosFaltam = 18 - idade;
-        document.write("Faltam " + anosFaltam + " para você se alistar");
+    if (sexo === 'F') {
+        valorDesconto = valorCompra * (13 / 100);
 
     }
-    else if (idade > 18) {
-        let anosAtraso = idade - 18;
-        document.write("Você está " + anosAtraso + " anos atrasado para o alistamento")
+    else {
+        valorDesconto = valorCompra * (5 / 100);
     }
+
+    valorComDesconto = valorCompra - valorDesconto;
+    document.write("Olá " + nome + "<br>");
+    document.write("Sua compra foi de: " + valorCompra.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + "<br>");
+    document.write("Você recebeu: " + valorDesconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + " de desconto" + "<br>");
+    document.write("Sua compra ficou em: " + valorComDesconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
 
 </script>

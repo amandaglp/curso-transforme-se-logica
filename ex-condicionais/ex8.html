@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    let quilometragemAPercorrer = Number(prompt("Digite aqui quantos km pretende percorrer"));
+    let preco = 0;
+
+    if (quilometragemAPercorrer > 200) {
+        preco = quilometragemAPercorrer * 0.45;
+    }
+    else {
+        preco = quilometragemAPercorrer * 0.50;
+    }
+
+    document.write("O preço da sua viagem será de: " + preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+</script>
